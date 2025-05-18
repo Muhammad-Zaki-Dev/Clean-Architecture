@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Zaki\\source\\repos\\CleanArchitecture\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C79769F-0A36-409C-A9BB-E3E2AC60452E}|Infrastructure\\Infrastructure.csproj|c:\\users\\zaki\\source\\repos\\cleanarchitecture\\infrastructure\\presistance\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C79769F-0A36-409C-A9BB-E3E2AC60452E}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\presistance\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E30EE72-E031-473C-92EF-765B09649106}|Application\\Application.csproj|c:\\users\\zaki\\source\\repos\\cleanarchitecture\\application\\features\\categories\\command\\createcategoryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E30EE72-E031-473C-92EF-765B09649106}|Application\\Application.csproj|solutionrelative:application\\features\\categories\\command\\createcategoryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E30EE72-E031-473C-92EF-765B09649106}|Application\\Application.csproj|c:\\users\\zaki\\source\\repos\\cleanarchitecture\\application\\features\\categories\\command\\createcategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E30EE72-E031-473C-92EF-765B09649106}|Application\\Application.csproj|solutionrelative:application\\features\\categories\\command\\createcategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C79769F-0A36-409C-A9BB-E3E2AC60452E}|Infrastructure\\Infrastructure.csproj|c:\\users\\zaki\\source\\repos\\cleanarchitecture\\infrastructure\\repositories\\genericrepsitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C79769F-0A36-409C-A9BB-E3E2AC60452E}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\genericrepsitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateCategoryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Zaki\\source\\repos\\CleanArchitecture\\Application\\Features\\Categories\\Command\\CreateCategoryHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Categories\\Command\\CreateCategoryHandler.cs",
+              "ToolTip": "C:\\Users\\Zaki\\source\\repos\\CleanArchitecture\\Application\\Features\\Categories\\Command\\CreateCategoryHandler.cs",
+              "RelativeToolTip": "Application\\Features\\Categories\\Command\\CreateCategoryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T14:05:07.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateCategoryCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Zaki\\source\\repos\\CleanArchitecture\\Application\\Features\\Categories\\Command\\CreateCategoryCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Categories\\Command\\CreateCategoryCommand.cs",
+              "ToolTip": "C:\\Users\\Zaki\\source\\repos\\CleanArchitecture\\Application\\Features\\Categories\\Command\\CreateCategoryCommand.cs",
+              "RelativeToolTip": "Application\\Features\\Categories\\Command\\CreateCategoryCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T14:05:01.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\Zaki\\source\\repos\\CleanArchitecture\\Infrastructure\\Presistance\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Presistance\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\Zaki\\source\\repos\\CleanArchitecture\\Infrastructure\\Presistance\\ApplicationContext.cs",
+              "RelativeToolTip": "Infrastructure\\Presistance\\ApplicationContext.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAACMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T14:04:36.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GenericRepsitory.cs",
+              "DocumentMoniker": "C:\\Users\\Zaki\\source\\repos\\CleanArchitecture\\Infrastructure\\Repositories\\GenericRepsitory.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\GenericRepsitory.cs",
+              "ToolTip": "C:\\Users\\Zaki\\source\\repos\\CleanArchitecture\\Infrastructure\\Repositories\\GenericRepsitory.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\GenericRepsitory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T14:04:22.302Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

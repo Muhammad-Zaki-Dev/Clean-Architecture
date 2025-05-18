@@ -1,0 +1,58 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "APIGateway",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Categories": {
+      "post": {
+        "tags": [
+          "Categories"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCategoryCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCategoryCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCategoryCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CreateCategoryCommand": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
