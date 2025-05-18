@@ -1,4 +1,5 @@
-﻿using Application.Features.Categories.Command;
+﻿using Application.Features.Categories.Command.Create;
+using Application.Features.Categories.Command.Update;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -14,8 +15,14 @@ namespace APIGateway.Controllers
         {
             this.mediator = mediator;
         }
-        [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CreateCategoryCommand command)
+        [HttpPost("PostCategroy")]
+        public async Task<IActionResult> PostCategroy([FromBody] CreateCategoryCommand command)
+        {
+            await mediator.Send(command);
+            return Ok();
+        }
+        [HttpPut("PutCategory")]
+        public async Task<IActionResult> PutCategory([FromBody] UpdateCategoryCommand command)
         {
             await mediator.Send(command);
             return Ok();

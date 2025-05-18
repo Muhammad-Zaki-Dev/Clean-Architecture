@@ -1,12 +1,13 @@
-﻿using System;
+﻿using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Categories.Command
+namespace Application.Features.Categories.Command.Update
 {
-    public class UpdateCategoryCommand
+    public class UpdateCategoryCommand:IRequest
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
