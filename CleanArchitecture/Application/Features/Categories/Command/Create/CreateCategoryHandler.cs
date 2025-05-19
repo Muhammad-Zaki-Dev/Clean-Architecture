@@ -11,10 +11,10 @@ namespace Application.Features.Categories.Command.Create
 {
     public class CreateCategoryHandler : IRequestHandler<CreateCategoryCommand>
     {
-        private readonly IRepository<Category> repository;
-        public CreateCategoryHandler(IRepository<Category> repository)
+        private readonly IUnitOfWork unitOfWork;
+        public CreateCategoryHandler(IUnitOfWork unitOfWork)
         {
-            this.repository = repository;
+            this.unitOfWork = unitOfWork;
         }
         public async Task Handle(CreateCategoryCommand request, CancellationToken cancellationToken)
         {
@@ -23,8 +23,10 @@ namespace Application.Features.Categories.Command.Create
                 Name = request.Name,
                 Status = request.Status
             };
-           await repository.AddAsync(category);
-          
+            await unitOfWork.Categories.AddAsync(category);
+            await unitOfWork.CommitChanges();
+
+
         }
     }
 }

@@ -24,14 +24,14 @@ namespace Infrastructure.Repositories
         public async Task AddAsync(T entity)
         {
             await dbSet.AddAsync(entity);
-            await _context.SaveChangesAsync();
+            
         }
 
         public async Task DeleteAsync(Guid Id)
         {
             var entity = await dbSet.FindAsync(Id);
             dbSet.Remove(entity);
-            await _context.SaveChangesAsync();
+          
         }
 
         public Task<List<T>> GetAllAsync()
@@ -44,10 +44,10 @@ namespace Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task UpdateAsync(T entity)
+        public  void Update(T entity)
         {
             dbSet.Update(entity);
-            await _context.SaveChangesAsync();
+        
         }
     }
 }

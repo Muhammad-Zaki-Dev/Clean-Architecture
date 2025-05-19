@@ -12,14 +12,14 @@ namespace Application.Features.Categories.Command.Update
 {
     public class UpdateCategoryHandler : IRequestHandler<UpdateCategoryCommand>
     {
-        private readonly IRepository<Category> repository;
-        public UpdateCategoryHandler(IRepository<Category> repository)
+        private readonly IUnitOfWork unitOfWork;
+        public UpdateCategoryHandler(IUnitOfWork unitOfWork)
         {
-            this.repository = repository;
+            this.unitOfWork = unitOfWork;
 
         }
 
-        public  async Task Handle(UpdateCategoryCommand request, CancellationToken cancellationToken)
+        public async Task Handle(UpdateCategoryCommand request, CancellationToken cancellationToken)
         {
             var category = new Category
             {
@@ -27,7 +27,8 @@ namespace Application.Features.Categories.Command.Update
                 Status = request.Status,
                 Id = request.Id
             };
-           await repository.UpdateAsync(category);
+             unitOfWork.Categories.Update(category);
+            await unitOfWork.CommitChanges();
         }
     }
 }
