@@ -11,7 +11,7 @@ namespace Domain.Generic
         Task<T> GetByIdAsync(Guid Id);
         Task<List<T>> GetAllAsync();
         Task AddAsync(T entity);
-        Task UpdateAsync(T entity);
+        void Update(T entity);
         Task DeleteAsync(Guid Id);
     }
 }
