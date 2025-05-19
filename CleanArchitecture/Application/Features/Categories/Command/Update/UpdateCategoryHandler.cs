@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using AutoMapper;
+using Domain.Entities;
 using Domain.Generic;
 using MediatR;
 using System;
@@ -13,21 +14,18 @@ namespace Application.Features.Categories.Command.Update
     public class UpdateCategoryHandler : IRequestHandler<UpdateCategoryCommand>
     {
         private readonly IUnitOfWork unitOfWork;
-        public UpdateCategoryHandler(IUnitOfWork unitOfWork)
+        private readonly IMapper mapper;
+        public UpdateCategoryHandler(IUnitOfWork unitOfWork, IMapper mapper)
         {
             this.unitOfWork = unitOfWork;
+            this.mapper = mapper;
 
         }
 
         public async Task Handle(UpdateCategoryCommand request, CancellationToken cancellationToken)
         {
-            var category = new Category
-            {
-                Name = request.Name,
-                Status = request.Status,
-                Id = request.Id
-            };
-             unitOfWork.Categories.Update(category);
+            var category = mapper.Map<Category>(request);
+            unitOfWork.Categories.Update(category);
             await unitOfWork.CommitChanges();
         }
     }
