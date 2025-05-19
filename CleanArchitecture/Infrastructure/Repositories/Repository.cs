@@ -34,14 +34,14 @@ namespace Infrastructure.Repositories
           
         }
 
-        public Task<List<T>> GetAllAsync()
+        public async Task<List<T>> GetAllAsync()
         {
-            throw new NotImplementedException();
+          return  await dbSet.ToListAsync();
         }
 
-        public Task<T> GetByIdAsync(Guid Id)
+        public async Task<T> GetByIdAsync(Guid Id)
         {
-            throw new NotImplementedException();
+            return await dbSet.FindAsync(Id);
         }
 
         public  void Update(T entity)
