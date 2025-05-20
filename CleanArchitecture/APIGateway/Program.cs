@@ -1,5 +1,7 @@
 using Application.Features.Categories.Command.Create;
 using Application.Features.Categories.Command.Update;
+using Application.Features.Categories.Queries.FetchAll;
+using Application.Features.Categories.Queries.FetchById;
 using Application.Services;
 using Domain.Generic;
 using Infrastructure;
@@ -18,6 +20,8 @@ builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()); // WebAPI handlers (optional)
     cfg.RegisterServicesFromAssembly(typeof(CreateCategoryCommand).Assembly); // Application layer handlers
     cfg.RegisterServicesFromAssembly(typeof(UpdateCategoryCommand).Assembly); // Application layer handlers
+    cfg.RegisterServicesFromAssembly(typeof(GetAllCategoriesQuery).Assembly); // Application layer handlers
+    cfg.RegisterServicesFromAssembly(typeof(GetByIdCategoryQuery).Assembly); // Application layer handlers
 });
 builder.Services.AddAutoMapper(typeof(Mapper));
 
