@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Application.Features.Categories.Command.Create
+namespace Application.Features.Categories.Command
 {
     public class CreateCategoryCommand:IRequest
 
