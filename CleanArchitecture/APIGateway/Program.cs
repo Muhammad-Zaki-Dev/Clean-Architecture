@@ -1,7 +1,5 @@
-using Application.Features.Categories.Command.Create;
-using Application.Features.Categories.Command.Update;
-using Application.Features.Categories.Queries.FetchAll;
-using Application.Features.Categories.Queries.FetchById;
+using Application.Features.Categories.Command;
+using Application.Features.Categories.Queries;
 using Application.Services;
 using Domain.Generic;
 using Infrastructure;

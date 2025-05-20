@@ -1,7 +1,5 @@
-﻿using Application.Features.Categories.Command.Create;
-using Application.Features.Categories.Command.Update;
-using Application.Features.Categories.Queries.FetchAll;
-using Application.Features.Categories.Queries.FetchById;
+﻿using Application.Features.Categories.Command;
+using Application.Features.Categories.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -32,14 +30,14 @@ namespace APIGateway.Controllers
         [HttpGet("GetAll")]
         public async Task<IActionResult> GetAll()
         {
-            
+
             return Ok(await mediator.Send(new GetAllCategoriesQuery()));
         }
         [HttpGet("GetById/{Id}")]
         public async Task<IActionResult> GetById(Guid Id)
         {
 
-            return Ok(await mediator.Send(new GetByIdCategoryQuery { Id=Id}));
+            return Ok(await mediator.Send(new GetByIdCategoryQuery { Id = Id }));
         }
     }
 }

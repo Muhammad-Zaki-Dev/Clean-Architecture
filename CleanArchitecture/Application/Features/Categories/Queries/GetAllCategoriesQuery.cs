@@ -6,10 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Categories.Queries.FetchById
+namespace Application.Features.Categories.Queries
 {
-    public class GetByIdCategoryQuery:IRequest<CategoryDTO>
+    public class GetAllCategoriesQuery:IRequest<List<CategoryDTO>>
     {
-        public Guid Id { get; set; }
     }
 }

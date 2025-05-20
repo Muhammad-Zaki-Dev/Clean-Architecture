@@ -1,6 +1,5 @@
 ﻿using Application.DTOs;
-using Application.Features.Categories.Command.Create;
-using Application.Features.Categories.Command.Update;
+using Application.Features.Categories.Command;
 using AutoMapper;
 using Domain.Entities;
 using System;
